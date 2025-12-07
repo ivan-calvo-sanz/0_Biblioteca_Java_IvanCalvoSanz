@@ -7,26 +7,68 @@ package _02_Bucles;
  */
 public class _0202_switch {
 
-    // https://www.w3schools.com/java/java_switch.asp
-    // CONCEPTOS BASICOS switch
-    // break    palabra clave, sale del bloque
-    // default  palabra clave, se ejecutará si no hay coincidencia de casos
     public static void main(String[] args) {
-        // Sintaxis if-else
-        int day = 2;
-        switch (day) {
+
+        /*  ============================================================ 
+            switch  → Evalúa un valor y ejecuta el caso que coincida
+            ============================================================
+            INSTRUCCIONES ESPECIALES EN switch
+            ------------------------------------------------------------
+            case    → Bloque que se ejecuta si coincide el valor evaluado
+            break   → Sale del switch para no seguir con otros casos
+            default → Se ejecuta si ninguno coincide
+            ->      → Sintaxis moderna compacta
+         */
+ 
+        /* ------------------------------------------------------------
+           SWITCH CON ENTEROS
+           ------------------------------------------------------------
+         */
+        int dia = 2;
+        switch (dia) {
             case 1:
-                System.out.println("Monday");
+                System.out.println("Lunes");
                 break;
             case 2:
-                System.out.println("Tuesday");
+                System.out.println("Martes");
                 break;
             case 3:
-                System.out.println("Wednesday");
+                System.out.println("Miércoles");
                 break;
             default:
-                System.out.println("Looking forward to the Weekend");
-        } // Output "Tuesday" (day 2)
-    }
+                System.out.println("Otro día");
+                break;
+        }
 
+        /* ------------------------------------------------------------
+           SWITCH CON STRING  → También funciona con texto
+           ------------------------------------------------------------
+         */
+        String color = "rojo";
+        switch (color) {
+            case "rojo":
+                System.out.println("Color rojo");
+                break;
+            case "azul":
+                System.out.println("Color azul");
+                break;
+            default:
+                System.out.println("Color no reconocido");
+                break;
+        }
+
+        /* ------------------------------------------------------------
+           SWITCH (->)  → Sintaxis moderna más compacta
+           ------------------------------------------------------------
+         */
+        int opcion = 1;
+        switch (opcion) {
+            case 1 ->
+                System.out.println("Opción 1");
+            case 2 ->
+                System.out.println("Opción 2");
+            default ->
+                System.out.println("Opción inválida");
+        }
+    }
 }

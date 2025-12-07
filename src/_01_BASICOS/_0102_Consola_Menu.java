@@ -1,7 +1,7 @@
-package _01_Basicos;
+package _01_BASICOS;
 
-import _01_Basicos._0103_Consola_PedidorDeDatos;
-import _01_Basicos._0104_Consola_ValidarDatos;
+import _01_BASICOS._0103_Consola_PedidorDeDatos;
+import _01_BASICOS._0104_Consola_ValidarDatos;
 import java.util.Scanner;
 
 /**

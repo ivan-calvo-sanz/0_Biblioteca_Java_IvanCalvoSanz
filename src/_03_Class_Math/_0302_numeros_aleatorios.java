@@ -46,10 +46,8 @@ public class _0302_numeros_aleatorios {
      * 04-Genera un array con numeros aleatorios no repetidos (El valor 0 no se
      * contempla que sea un posible valor en el array de numeros aleatorios)
      *
-     * @param valorAleatorioMinimo intervalo-valor minimo del numero aleatorio
-     * generado
-     * @param valorAleatorioMaximo intervalo-valor maximo del numero aleatorio
-     * generado
+     * @param valorAleatorioMinimo valor minimo del numero aleatorio generado
+     * @param valorAleatorioMaximo valor maximo del numero aleatorio generado
      * @param longitudArray longitud del Array
      * @return int[]
      */
@@ -92,11 +90,9 @@ public class _0302_numeros_aleatorios {
      * se contempla que sea un posible valor en el array de numeros aleatorios)
      *
      * @param numFilasMatriz numero de filas que tendra la Matriz generada
-     * @param numColumnasMatriz numero de filas que tendra la Matriz generada
-     * @param valorAleatorioMinimo intervalo-valor minimo del numero aleatorio
-     * generado
-     * @param valorAleatorioMaximo intervalo-valor minimo del numero aleatorio
-     * generado
+     * @param numColumnasMatriz numero de columnas que tendra la Matriz generada
+     * @param valorAleatorioMinimo valor minimo del numero aleatorio generado
+     * @param valorAleatorioMaximo valor minimo del numero aleatorio generado
      * @return int[][]
      */
     public static int[][] generaNumeroAleatorio(int numFilasMatriz, int numColumnasMatriz, int valorAleatorioMinimo, int valorAleatorioMaximo) {

@@ -10,39 +10,47 @@ public class _0201_if {
     // https://www.w3schools.com/java/java_conditions.asp
     // CONCEPTOS BASICOS if
     public static void main(String[] args) {
-        // Sintaxis if
-        if (20 > 18) {
-            System.out.println("20 is greater than 18");
+
+        /* ============================================================
+           IF  → Ejecuta un bloque si la condición es verdadera
+           ------------------------------------------------------------
+         */
+        int numero = 12;
+        if (numero > 10) {
+            System.out.println("El número es mayor que 10");
         }
 
-        // Sintaxis if-else
-        int time = 20;
-        if (time < 18) {
-            System.out.println("Good day.");
+        /* ============================================================
+           IF - ELSE  → Ejecuta un bloque si se cumple y otro si no
+           ------------------------------------------------------------
+         */
+        int n = 5;
+        if (n % 2 == 0) {
+            System.out.println("Es par");
         } else {
-            System.out.println("Good evening.");
-        } // Outputs "Good evening."
-
-        // Sintaxis if-else if
-        int time_v1 = 22;
-        if (time_v1 < 10) {
-            System.out.println("Good morning.");
-        } else if (time < 18) {
-            System.out.println("Good day.");
-        } else {
-            System.out.println("Good evening.");
-        } // Outputs "Good evening."
-
-        // Operador ternario
-        int time_v2 = 20;
-        if (time_v2 < 18) {
-            System.out.println("Good day.");
-        } else {
-            System.out.println("Good evening.");
+            System.out.println("Es impar");
         }
 
-        String result = (time_v2 < 18) ? "Good day." : "Good evening."; // Operador ternario
-        System.out.println(result);
+        /* ============================================================
+           IF - ELSE IF - ELSE  → Varias condiciones encadenadas
+           ------------------------------------------------------------
+         */
+        int valor = 0;
+        if (valor < 0) {
+            System.out.println("Es negativo");
+        } else if (valor == 0) {
+            System.out.println("Es cero");
+        } else {
+            System.out.println("Es positivo");
+        }
+
+        /* ============================================================
+           OPERADOR TERNARIO  → Condición en una sola línea
+           ------------------------------------------------------------
+         */
+        int x = 120;
+        String mensaje = (x > 100) ? "Mayor que 100" : "Menor o igual que 100";
+        System.out.println(mensaje);
     }
 
 }
