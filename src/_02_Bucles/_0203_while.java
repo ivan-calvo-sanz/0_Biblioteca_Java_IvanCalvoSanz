@@ -7,49 +7,51 @@ package _02_Bucles;
  */
 public class _0203_while {
 
-    // https://www.w3schools.com/java/java_while_loop.asp
-    // CONCEPTOS BASICOS while
-    // 
     public static void main(String[] args) {
-        // Sintaxis while
-        int i = 0;
-        while (i < 5) {
-            System.out.println(i);
+
+        /*  ============================================================ 
+            while → Ejecuta un bloque de código mientras la condición sea verdadera
+            ============================================================
+            INSTRUCCIONES ESPECIALES EN while
+            ------------------------------------------------------------
+            break    → Sale del bucle inmediatamente
+            continue → Salta a la siguiente iteración
+         */
+
+        /* ------------------------------------------------------------
+           WHILE SIMPLE
+           ------------------------------------------------------------ 
+         */
+        int contador = 1;
+        while (contador <= 3) {
+            System.out.println("Contador: " + contador);
+            contador++;
+        }
+
+        /* ------------------------------------------------------------
+           WHILE CON BREAK
+           ------------------------------------------------------------ 
+         */
+        int i = 1;
+        while (true) {
+            System.out.println("i = " + i);
+            if (i == 3) {
+                break; // Sale del bucle
+            }
             i++;
         }
 
-        // do-while
-        // ejecuta el bloque de código una vez SIEMPRE, antes de verificar si la condición es verdadera, luego repetirá el bucle mientras la condición sea verdadera
+        /* ------------------------------------------------------------
+           WHILE CON CONTINUE
+           ------------------------------------------------------------ 
+         */
         int j = 0;
-        do {
-            System.out.println(j);
+        while (j < 5) {
             j++;
-        } while (j < 5);
-
-        // break   
-        // se utiliza para salir del bucle
-        // Este ejemplo se sale del bucle cuando k es igual a 4:
-        int k = 0;
-        while (k < 10) {
-            System.out.println(k);
-            k++;
-            if (k == 4) {
-                break;
+            if (j % 2 == 0) {
+                continue; // Salta los números pares
             }
-        }
-
-        // continue   
-        // interrumpe una iteración, si se produce la condición, y continúa con la siguiente iteración
-        // Este ejemplo omite el valor de 4:
-        int z = 0;
-        while (z < 10) {
-            if (z == 4) {
-                z++;
-                continue;
-            }
-            System.out.println(z);
-            z++;
-        }
-
+            System.out.println("Número impar: " + j);
+        } 
     }
 }

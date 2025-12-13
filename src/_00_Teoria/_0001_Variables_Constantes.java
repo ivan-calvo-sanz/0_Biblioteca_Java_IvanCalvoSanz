@@ -6,8 +6,6 @@ package _00_Teoria;
  *
  */
 public class _0001_Variables_Constantes {
-    
-        // https://www.javatpoint.com/java-variables
 
     // primitive data:
     //    Data Type	Default Value	Default size
@@ -45,7 +43,5 @@ public class _0001_Variables_Constantes {
         final int PUNTUACION_SUPERAR = 3;
         
         System.out.println(PUNTUACION_SUPERAR);
-
     }
-
 }

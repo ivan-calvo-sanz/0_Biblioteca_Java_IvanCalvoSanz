@@ -7,13 +7,10 @@ package _03_Class_Math;
  */
 public class _0300_Class_Math_Teoria {
 
-    // https://docs.oracle.com/javase/7/docs/api/
-    // CONCEPTOS BASICOS CLASE Math
-    // 
     public static void main(String[] args) {
 
         /* 
-   TABLA RESUMEN CLASE Math (Java)
+   TABLA RESUMEN CLASE Math
 
    +-------------------------+-------------------------------------------+------------------------------+
    |        MÉTODO           |               DESCRIPCIÓN                 |           DEVUELVE           |
